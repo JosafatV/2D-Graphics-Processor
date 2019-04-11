@@ -66,7 +66,7 @@ module tb_data_path();
 		   Instruction<= 32'b11100010010000110010000000000000;
 		   ReadData   <= 0;
 			# 10; 
-			/*
+
 			RegSrc     = 0;
 			RegWrite   = 0;
 			ImmSrc     = 0;
