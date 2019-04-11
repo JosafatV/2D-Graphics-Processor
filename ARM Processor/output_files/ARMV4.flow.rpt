@@ -1,6 +1,6 @@
 Flow report for ARMV4
-Sun Nov 11 20:32:49 2018
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Thu Apr 11 17:25:43 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -37,24 +37,30 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sun Nov 11 20:32:49 2018       ;
-; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
-; Revision Name               ; ARMV4                                       ;
-; Top-level Entity Name       ; tb_PROCESSOR                                ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CSEMA5F31C6                                ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Apr 11 17:25:43 2019       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; ARMV4                                       ;
+; Top-level Entity Name              ; PROCESSOR                                   ;
+; Family                             ; Cyclone IV GX                               ;
+; Total logic elements               ; 1,523 / 21,280 ( 7 % )                      ;
+;     Total combinational functions  ; 1,043 / 21,280 ( 5 % )                      ;
+;     Dedicated logic registers      ; 1,157 / 21,280 ( 5 % )                      ;
+; Total registers                    ; 1157                                        ;
+; Total pins                         ; 67 / 167 ( 40 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 774,144 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                              ;
+; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                               ;
+; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                               ;
+; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                               ;
+; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; Device                             ; EP4CGX22CF19C6                              ;
+; Timing Models                      ; Final                                       ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,56 +68,63 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/11/2018 20:32:27 ;
+; Start date & time ; 04/11/2019 17:22:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ARMV4               ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                             ;
-+-------------------------------------+----------------------------------------+---------------+--------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name  ; Section Id     ;
-+-------------------------------------+----------------------------------------+---------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 270877307826905.154198994708728        ; --            ; --           ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --           ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --           ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --           ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --           ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --           ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; tb_PROCESSOR ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; tb_PROCESSOR ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; tb_PROCESSOR ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --           ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --           ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --           ; --             ;
-; TOP_LEVEL_ENTITY                    ; tb_PROCESSOR                           ; ARMV4         ; --           ; --             ;
-+-------------------------------------+----------------------------------------+---------------+--------------+----------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 1097017069174.155502493410984          ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
+; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; PROCESSOR   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; PROCESSOR   ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; PROCESSOR   ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; PROCESSOR                              ; ARMV4         ; --          ; --             ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:23     ; 1.0                     ; 4799 MB             ; 00:00:49                           ;
-; Total                  ; 00:00:23     ; --                      ; --                  ; 00:00:49                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 4896 MB             ; 00:00:46                           ;
+; Fitter               ; 00:01:02     ; 1.1                     ; 5901 MB             ; 00:01:21                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4765 MB             ; 00:00:04                           ;
+; Total                ; 00:01:31     ; --                      ; --                  ; 00:02:11                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+------------------------+------------------+------------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-QNMHHR9  ; Windows 10 ; 10.0       ; x86_64         ;
-+------------------------+------------------+------------+------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; Frostrite        ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Frostrite        ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Frostrite        ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off ARMV4 -c ARMV4 --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off ARMV4 -c ARMV4
+quartus_fit --read_settings_files=on --write_settings_files=off ARMV4 -c ARMV4
+quartus_asm --read_settings_files=on --write_settings_files=off ARMV4 -c ARMV4
 
 
 

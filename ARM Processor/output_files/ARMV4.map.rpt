@@ -1,43 +1,49 @@
-Analysis & Elaboration report for ARMV4
-Sun Nov 11 20:32:49 2018
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Analysis & Synthesis report for ARMV4
+Thu Apr 11 17:22:39 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxPC
-  5. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4
-  6. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8
-  7. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1
-  8. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA2
-  9. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRam
- 10. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU
- 11. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU
- 12. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S
- 13. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F
- 14. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|and_A:and_F
- 15. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|or_A:or_F
- 16. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|xor_A:xor_F
- 17. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|not_A:not_F
- 18. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_arithmetic:lsa
- 19. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_arithmetic:rsa
- 20. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_logic:lsl
- 21. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_logic:rsl
- 22. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F
- 23. Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|flags:flags_F
- 24. Analysis & Elaboration Settings
- 25. Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1"
- 26. Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8"
- 27. Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4"
- 28. Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_2"
- 29. Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_1"
- 30. Port Connectivity Checks: "PROCESSOR:dut"
- 31. Analysis & Elaboration Messages
- 32. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxPC
+ 11. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4
+ 12. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8
+ 13. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1
+ 14. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA2
+ 15. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRam
+ 16. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU
+ 17. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU
+ 18. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S
+ 19. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F
+ 20. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|and_A:and_F
+ 21. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|or_A:or_F
+ 22. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|xor_A:xor_F
+ 23. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|not_A:not_F
+ 24. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_arithmetic:lsa
+ 25. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_arithmetic:rsa
+ 26. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_logic:lsl
+ 27. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_logic:rsl
+ 28. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F
+ 29. Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|flags:flags_F
+ 30. Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1"
+ 31. Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8"
+ 32. Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4"
+ 33. Port Connectivity Checks: "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_2"
+ 34. Port Connectivity Checks: "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_1"
+ 35. Post-Synthesis Netlist Statistics for Top Partition
+ 36. Elapsed Time Per Partition
+ 37. Analysis & Synthesis Messages
+ 38. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -60,22 +66,114 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Nov 11 20:32:49 2018       ;
-; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
-; Revision Name                 ; ARMV4                                       ;
-; Top-level Entity Name         ; tb_PROCESSOR                                ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Apr 11 17:22:38 2019       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; ARMV4                                       ;
+; Top-level Entity Name              ; PROCESSOR                                   ;
+; Family                             ; Cyclone IV GX                               ;
+; Total logic elements               ; 2,099                                       ;
+;     Total combinational functions  ; 1,043                                       ;
+;     Dedicated logic registers      ; 1,157                                       ;
+; Total registers                    ; 1157                                        ;
+; Total pins                         ; 67                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total GXB Receiver Channel PCS     ; 0                                           ;
+; Total GXB Receiver Channel PMA     ; 0                                           ;
+; Total GXB Transmitter Channel PCS  ; 0                                           ;
+; Total GXB Transmitter Channel PMA  ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; PROCESSOR          ; ARMV4              ;
+; Family name                                                      ; Cyclone IV GX      ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation              ; All                ;                    ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -83,19 +181,583 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.1%      ;
 +----------------------------+-------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                 ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+; ALU/xor_A.sv                     ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/xor_A.sv                    ;         ;
+; ALU/sumador.sv                   ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/sumador.sv                  ;         ;
+; ALU/right_shift_logic.sv         ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/right_shift_logic.sv        ;         ;
+; ALU/right_shift_arithmetic.sv    ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/right_shift_arithmetic.sv   ;         ;
+; ALU/or_A.sv                      ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/or_A.sv                     ;         ;
+; ALU/not_A.sv                     ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/not_A.sv                    ;         ;
+; ALU/mux_Sumador.sv               ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_Sumador.sv              ;         ;
+; ALU/mux_ALU.sv                   ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_ALU.sv                  ;         ;
+; ALU/left_shift_logic.sv          ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/left_shift_logic.sv         ;         ;
+; ALU/left_shift_arithmetic.sv     ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/left_shift_arithmetic.sv    ;         ;
+; ALU/flags.sv                     ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/flags.sv                    ;         ;
+; ALU/and_A.sv                     ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/and_A.sv                    ;         ;
+; ALU/ALU_N_bits.sv                ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv               ;         ;
+; muxARM.sv                        ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/muxARM.sv                       ;         ;
+; adderARM.sv                      ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/adderARM.sv                     ;         ;
+; PC_REG.sv                        ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PC_REG.sv                       ;         ;
+; instruction_memory.sv            ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/instruction_memory.sv           ;         ;
+; data_memory.sv                   ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_memory.sv                  ;         ;
+; register_file.sv                 ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/register_file.sv                ;         ;
+; extend.sv                        ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/extend.sv                       ;         ;
+; data_path.sv                     ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv                    ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/decoder.sv                      ;         ;
+; conditions.sv                    ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditions.sv                   ;         ;
+; REG_EN.sv                        ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/REG_EN.sv                       ;         ;
+; conditional_logic.sv             ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditional_logic.sv            ;         ;
+; ARMV4.sv                         ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ARMV4.sv                        ;         ;
+; control_unit.sv                  ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/control_unit.sv                 ;         ;
+; PROCESSOR.sv                     ; yes             ; User SystemVerilog HDL File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv                    ;         ;
+; instructions/instrucciones1.mem  ; yes             ; Auto-Found Unspecified File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/instructions/instrucciones1.mem ;         ;
+; register.mem                     ; yes             ; Auto-Found Unspecified File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/register.mem                    ;         ;
+; ram.mem                          ; yes             ; Auto-Found Unspecified File  ; B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ram.mem                         ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 67               ;
+;                          ;                  ;
+; DSP block 9-bit elements ; 0                ;
+;                          ;                  ;
+; Maximum fan-out node     ; clk~input        ;
+; Maximum fan-out          ; 1157             ;
+; Total fan-out            ; 7490             ;
+; Average fan-out          ; 3.21             ;
++--------------------------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                  ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                 ; Entity Name        ; Library Name ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------------+--------------+
+; |PROCESSOR                                          ; 1043 (0)            ; 1157 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0         ; 67   ; 0            ; |PROCESSOR                                                                                          ; PROCESSOR          ; work         ;
+;    |ARMV4:ARMV4_unit|                               ; 319 (0)             ; 133 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit                                                                         ; ARMV4              ; work         ;
+;       |control_unit:control_unit_unit|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|control_unit:control_unit_unit                                          ; control_unit       ; work         ;
+;          |conditional_logic:conditional_logic_unit| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit ; conditional_logic  ; work         ;
+;          |decoder:decoder_unit|                     ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|control_unit:control_unit_unit|decoder:decoder_unit                     ; decoder            ; work         ;
+;       |data_path:datapath_unit|                     ; 314 (0)             ; 133 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|data_path:datapath_unit                                                 ; data_path          ; work         ;
+;          |ALU_N_bits:ALU|                           ; 65 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU                                  ; ALU_N_bits         ; work         ;
+;             |sumador:suma_F|                        ; 65 (65)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F                   ; sumador            ; work         ;
+;          |PC_REG:PC_REG_unit|                       ; 5 (5)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|data_path:datapath_unit|PC_REG:PC_REG_unit                              ; PC_REG             ; work         ;
+;          |muxARM:muxALU|                            ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU                                   ; muxARM             ; work         ;
+;          |muxARM:muxRA2|                            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA2                                   ; muxARM             ; work         ;
+;          |muxARM:muxRam|                            ; 72 (72)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRam                                   ; muxARM             ; work         ;
+;          |register_file:register_file_unit|         ; 137 (137)           ; 128 (128)                 ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit                ; register_file      ; work         ;
+;    |data_memory:data_memory_unit|                   ; 714 (714)           ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|data_memory:data_memory_unit                                                             ; data_memory        ; work         ;
+;    |instruction_memory:instruction_memory_unit|     ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |PROCESSOR|instruction_memory:instruction_memory_unit                                               ; instruction_memory ; work         ;
++-----------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                     ;
++-----------------------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                                 ; Reason for Removal                     ;
++-----------------------------------------------------------------------------------------------+----------------------------------------+
+; ARMV4:ARMV4_unit|data_path:datapath_unit|PC_REG:PC_REG_unit|PC_out[0,1]                       ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~128 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~160 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~192 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~224 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~256 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~288 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~320 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~352 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~384 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~416 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~448 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~129 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~161 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~193 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~225 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~257 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~289 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~321 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~353 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~385 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~417 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~449 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~130 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~162 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~194 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~226 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~258 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~290 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~322 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~354 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~386 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~418 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~450 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~131 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~163 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~195 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~227 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~259 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~291 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~323 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~355 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~387 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~419 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~451 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~132 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~164 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~196 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~228 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~260 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~292 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~324 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~356 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~388 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~420 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~452 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~133 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~165 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~197 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~229 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~261 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~293 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~325 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~357 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~389 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~421 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~453 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~134 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~166 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~198 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~230 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~262 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~294 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~326 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~358 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~390 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~422 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~454 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~135 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~167 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~199 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~231 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~263 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~295 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~327 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~359 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~391 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~423 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~455 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~136 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~168 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~200 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~232 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~264 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~296 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~328 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~360 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~392 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~424 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~456 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~137 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~169 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~201 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~233 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~265 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~297 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~329 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~361 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~393 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~425 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~457 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~138 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~170 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~202 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~234 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~266 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~298 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~330 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~362 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~394 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~426 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~458 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~139 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~171 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~203 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~235 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~267 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~299 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~331 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~363 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~395 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~427 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~459 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~140 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~172 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~204 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~236 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~268 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~300 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~332 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~364 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~396 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~428 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~460 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~141 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~173 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~205 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~237 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~269 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~301 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~333 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~365 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~397 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~429 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~461 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~142 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~174 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~206 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~238 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~270 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~302 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~334 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~366 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~398 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~430 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~462 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~143 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~175 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~207 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~239 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~271 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~303 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~335 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~367 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~399 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~431 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~463 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~144 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~176 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~208 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~240 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~272 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~304 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~336 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~368 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~400 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~432 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~464 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~145 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~177 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~209 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~241 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~273 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~305 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~337 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~369 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~401 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~433 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~465 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~146 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~178 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~210 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~242 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~274 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~306 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~338 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~370 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~402 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~434 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~466 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~147 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~179 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~211 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~243 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~275 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~307 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~339 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~371 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~403 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~435 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~467 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~148 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~180 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~212 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~244 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~276 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~308 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~340 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~372 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~404 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~436 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~468 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~149 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~181 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~213 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~245 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~277 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~309 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~341 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~373 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~405 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~437 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~469 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~150 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~182 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~214 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~246 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~278 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~310 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~342 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~374 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~406 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~438 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~470 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~151 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~183 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~215 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~247 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~279 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~311 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~343 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~375 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~407 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~439 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~471 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~152 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~184 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~216 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~248 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~280 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~312 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~344 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~376 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~408 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~440 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~472 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~153 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~185 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~217 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~249 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~281 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~313 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~345 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~377 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~409 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~441 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~473 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~154 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~186 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~218 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~250 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~282 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~314 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~346 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~378 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~410 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~442 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~474 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~155 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~187 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~219 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~251 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~283 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~315 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~347 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~379 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~411 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~443 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~475 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~156 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~188 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~220 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~252 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~284 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~316 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~348 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~380 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~412 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~444 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~476 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~157 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~189 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~221 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~253 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~285 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~317 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~349 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~381 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~413 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~445 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~477 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~158 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~190 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~222 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~254 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~286 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~318 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~350 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~382 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~414 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~446 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~478 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~159 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~191 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~223 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~255 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~287 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~319 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~351 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~383 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~415 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~447 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory~479 ; Stuck at GND due to stuck port data_in ;
+; ARMV4:ARMV4_unit|data_path:datapath_unit|PC_REG:PC_REG_unit|PC_out[7..31]                     ; Lost fanout                            ;
+; Total Number of Removed Registers = 379                                                       ;                                        ;
++-----------------------------------------------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1157  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1152  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxPC ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8 ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRam ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxPC ;
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|and_A:and_F ;
 +----------------+-------+-----------------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                                    ;
 +----------------+-------+-----------------------------------------------------------------------------------------+
@@ -104,8 +766,58 @@ refer to the applicable agreement for further details.
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|or_A:or_F ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|xor_A:xor_F ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|not_A:not_F ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_arithmetic:lsa ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_arithmetic:rsa ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4 ;
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_logic:lsl ;
 +----------------+-------+--------------------------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                                             ;
 +----------------+-------+--------------------------------------------------------------------------------------------------+
@@ -114,58 +826,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8 ;
-+----------------+-------+--------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                             ;
-+----------------+-------+--------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                   ;
-+----------------+-------+--------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1 ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                                           ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA2 ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; N              ; 4     ; Signed Integer                                                                           ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRam ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                           ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxALU ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                           ;
-+----------------+-------+------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_logic:rsl ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU ;
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F ;
 +----------------+-------+-------------------------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                                      ;
 +----------------+-------+-------------------------------------------------------------------------------------------+
@@ -174,413 +846,246 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                        ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                              ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|flags:flags_F ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; N_b            ; 32    ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1" ;
++------+-------+----------+----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                  ;
++------+-------+----------+----------------------------------------------------------+
+; B    ; Input ; Info     ; Stuck at VCC                                             ;
++------+-------+----------+----------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8" ;
++----------+-------+----------+--------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                      ;
++----------+-------+----------+--------------------------------------------------------------+
+; B[31..3] ; Input ; Info     ; Stuck at GND                                                 ;
+; B[1..0]  ; Input ; Info     ; Stuck at GND                                                 ;
+; B[2]     ; Input ; Info     ; Stuck at VCC                                                 ;
++----------+-------+----------+--------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4" ;
++----------+-------+----------+--------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                      ;
++----------+-------+----------+--------------------------------------------------------------+
+; B[31..3] ; Input ; Info     ; Stuck at GND                                                 ;
+; B[1..0]  ; Input ; Info     ; Stuck at GND                                                 ;
+; B[2]     ; Input ; Info     ; Stuck at VCC                                                 ;
++----------+-------+----------+--------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                     ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                           ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+; Port Connectivity Checks: "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_2" ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                    ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|and_A:and_F ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                  ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                        ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_1" ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                    ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|or_A:or_F ;
-+----------------+-------+-----------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                ;
-+----------------+-------+-----------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                      ;
-+----------------+-------+-----------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 67                          ;
+; cycloneiii_ff         ; 1157                        ;
+;     CLR               ; 5                           ;
+;     ENA               ; 1152                        ;
+; cycloneiii_lcell_comb ; 1043                        ;
+;     arith             ; 35                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 31                          ;
+;     normal            ; 1008                        ;
+;         1 data inputs ; 33                          ;
+;         2 data inputs ; 39                          ;
+;         3 data inputs ; 69                          ;
+;         4 data inputs ; 867                         ;
+;                       ;                             ;
+; Max LUT depth         ; 13.50                       ;
+; Average LUT depth     ; 8.30                        ;
++-----------------------+-----------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|xor_A:xor_F ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                  ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                        ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|not_A:not_F ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                  ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                        ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_arithmetic:lsa ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                                ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_arithmetic:rsa ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                                 ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_logic:lsl ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                           ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                                 ;
-+----------------+-------+----------------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_logic:rsl ;
-+----------------+-------+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                            ;
-+----------------+-------+-----------------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                    ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                                          ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|flags:flags_F ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                    ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------+
-; N_b            ; 32    ; Signed Integer                                                                                          ;
-+----------------+-------+---------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; tb_PROCESSOR       ; ARMV4              ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-
-
-+--------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1" ;
-+------+-------+----------+------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                ;
-+------+-------+----------+------------------------------------------------------------------------+
-; B    ; Input ; Info     ; Stuck at VCC                                                           ;
-+------+-------+----------+------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS8" ;
-+----------+-------+----------+----------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                    ;
-+----------+-------+----------+----------------------------------------------------------------------------+
-; B[31..3] ; Input ; Info     ; Stuck at GND                                                               ;
-; B[1..0]  ; Input ; Info     ; Stuck at GND                                                               ;
-; B[2]     ; Input ; Info     ; Stuck at VCC                                                               ;
-+----------+-------+----------+----------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4" ;
-+----------+-------+----------+----------------------------------------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                                                    ;
-+----------+-------+----------+----------------------------------------------------------------------------+
-; B[31..3] ; Input ; Info     ; Stuck at GND                                                               ;
-; B[1..0]  ; Input ; Info     ; Stuck at GND                                                               ;
-; B[2]     ; Input ; Info     ; Stuck at VCC                                                               ;
-+----------+-------+----------+----------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_2" ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                              ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
-; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PROCESSOR:dut|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_1" ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                              ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
-; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "PROCESSOR:dut"                                                                           ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; clk       ; Input  ; Info     ; Stuck at GND                                                                        ;
-; WriteData ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; DataAdr   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; MemWrite  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 11 20:32:26 2018
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ARMV4 -c ARMV4 --analysis_and_elaboration
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Apr 11 17:22:13 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ARMV4 -c ARMV4
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu/xor_a.sv
-    Info (12023): Found entity 1: xor_A File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/xor_A.sv Line: 1
+    Info (12023): Found entity 1: xor_A File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/xor_A.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/tb_alu.sv
-    Info (12023): Found entity 1: tb_ALU File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/tb_ALU.sv Line: 1
+    Info (12023): Found entity 1: tb_ALU File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/tb_ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/sumador.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/sumador.sv Line: 1
+    Info (12023): Found entity 1: sumador File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/sumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/simpleadder.sv
-    Info (12023): Found entity 1: simpleAdder File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/simpleAdder.sv Line: 1
+    Info (12023): Found entity 1: simpleAdder File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/simpleAdder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/right_shift_logic.sv
-    Info (12023): Found entity 1: right_shift_logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/right_shift_logic.sv Line: 1
+    Info (12023): Found entity 1: right_shift_logic File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/right_shift_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/right_shift_arithmetic.sv
-    Info (12023): Found entity 1: right_shift_arithmetic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/right_shift_arithmetic.sv Line: 1
+    Info (12023): Found entity 1: right_shift_arithmetic File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/right_shift_arithmetic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/or_a.sv
-    Info (12023): Found entity 1: or_A File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/or_A.sv Line: 1
+    Info (12023): Found entity 1: or_A File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/or_A.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/not_a.sv
-    Info (12023): Found entity 1: not_A File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/not_A.sv Line: 1
+    Info (12023): Found entity 1: not_A File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/not_A.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_sumador.sv
-    Info (12023): Found entity 1: mux_Sumador File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/mux_Sumador.sv Line: 1
+    Info (12023): Found entity 1: mux_Sumador File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_Sumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_alu.sv
-    Info (12023): Found entity 1: mux_ALU File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/mux_ALU.sv Line: 1
+    Info (12023): Found entity 1: mux_ALU File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/left_shift_logic.sv
-    Info (12023): Found entity 1: left_shift_logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/left_shift_logic.sv Line: 1
+    Info (12023): Found entity 1: left_shift_logic File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/left_shift_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/left_shift_arithmetic.sv
-    Info (12023): Found entity 1: left_shift_arithmetic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/left_shift_arithmetic.sv Line: 1
+    Info (12023): Found entity 1: left_shift_arithmetic File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/left_shift_arithmetic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flags.sv
-    Info (12023): Found entity 1: flags File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/flags.sv Line: 1
+    Info (12023): Found entity 1: flags File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/flags.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/and_a.sv
-    Info (12023): Found entity 1: and_A File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/and_A.sv Line: 1
+    Info (12023): Found entity 1: and_A File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/and_A.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alu_n_bits.sv
-    Info (12023): Found entity 1: ALU_N_bits File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 1
+    Info (12023): Found entity 1: ALU_N_bits File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_register_file.sv
-    Info (12023): Found entity 1: tb_register_file File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_register_file.sv Line: 1
+    Info (12023): Found entity 1: tb_register_file File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_register_file.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_instruction_memory.sv
-    Info (12023): Found entity 1: tb_instruction_memory File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_instruction_memory.sv Line: 1
+    Info (12023): Found entity 1: tb_instruction_memory File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_instruction_memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file muxarm.sv
-    Info (12023): Found entity 1: muxARM File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/muxARM.sv Line: 1
+    Info (12023): Found entity 1: muxARM File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/muxARM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_muxarm.sv
-    Info (12023): Found entity 1: tb_muxARM File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_muxARM.sv Line: 1
+    Info (12023): Found entity 1: tb_muxARM File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_muxARM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adderarm.sv
-    Info (12023): Found entity 1: adderARM File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/adderARM.sv Line: 1
+    Info (12023): Found entity 1: adderARM File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/adderARM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_adderarm.sv
-    Info (12023): Found entity 1: tb_adderARM File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_adderARM.sv Line: 1
+    Info (12023): Found entity 1: tb_adderARM File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_adderARM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pc_reg.sv
-    Info (12023): Found entity 1: PC_REG File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/PC_REG.sv Line: 1
+    Info (12023): Found entity 1: PC_REG File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PC_REG.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_pc_reg.sv
-    Info (12023): Found entity 1: tb_PC_REG File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_PC_REG.sv Line: 1
+    Info (12023): Found entity 1: tb_PC_REG File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_PC_REG.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.sv
-    Info (12023): Found entity 1: instruction_memory File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/instruction_memory.sv Line: 1
+    Info (12023): Found entity 1: instruction_memory File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/instruction_memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file data_memory.sv
-    Info (12023): Found entity 1: data_memory File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/data_memory.sv Line: 1
+    Info (12023): Found entity 1: data_memory File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_data_memory.sv
-    Info (12023): Found entity 1: tb_data_memory File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_data_memory.sv Line: 1
+    Info (12023): Found entity 1: tb_data_memory File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_data_memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register_file.sv
-    Info (12023): Found entity 1: register_file File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/register_file.sv Line: 1
+    Info (12023): Found entity 1: register_file File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/register_file.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
-    Info (12023): Found entity 1: extend File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/extend.sv Line: 1
+    Info (12023): Found entity 1: extend File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_extend.sv
-    Info (12023): Found entity 1: tb_extend File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_extend.sv Line: 1
+    Info (12023): Found entity 1: tb_extend File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file data_path.sv
-    Info (12023): Found entity 1: data_path File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/data_path.sv Line: 1
-Warning (10090): Verilog HDL syntax warning at tb_data_path.sv(69): extra block comment delimiter characters /* within block comment File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_data_path.sv Line: 69
+    Info (12023): Found entity 1: data_path File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_data_path.sv
-    Info (12023): Found entity 1: tb_data_path File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_data_path.sv Line: 1
+    Info (12023): Found entity 1: tb_data_path File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_data_path.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/decoder.sv Line: 1
+    Info (12023): Found entity 1: decoder File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_decoder.sv
-    Info (12023): Found entity 1: tb_decoder File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_decoder.sv Line: 1
+    Info (12023): Found entity 1: tb_decoder File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file conditions.sv
-    Info (12023): Found entity 1: conditions File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/conditions.sv Line: 1
+    Info (12023): Found entity 1: conditions File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditions.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file reg_en.sv
-    Info (12023): Found entity 1: REG_EN File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/REG_EN.sv Line: 1
+    Info (12023): Found entity 1: REG_EN File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/REG_EN.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_reg_en.sv
-    Info (12023): Found entity 1: tb_REG_EN File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_REG_EN.sv Line: 1
+    Info (12023): Found entity 1: tb_REG_EN File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_REG_EN.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file conditional_logic.sv
-    Info (12023): Found entity 1: conditional_logic File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/conditional_logic.sv Line: 1
+    Info (12023): Found entity 1: conditional_logic File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditional_logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file armv4.sv
-    Info (12023): Found entity 1: ARMV4 File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ARMV4.sv Line: 1
+    Info (12023): Found entity 1: ARMV4 File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ARMV4.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
-    Info (12023): Found entity 1: control_unit File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/control_unit.sv Line: 1
+    Info (12023): Found entity 1: control_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/control_unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_armv4.sv
-    Info (12023): Found entity 1: tb_ARMV4 File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_ARMV4.sv Line: 1
+    Info (12023): Found entity 1: tb_ARMV4 File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_ARMV4.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_processor.sv
-    Info (12023): Found entity 1: tb_PROCESSOR File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_PROCESSOR.sv Line: 1
+    Info (12023): Found entity 1: tb_PROCESSOR File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_PROCESSOR.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor.sv
-    Info (12023): Found entity 1: PROCESSOR File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/PROCESSOR.sv Line: 1
-Info (12127): Elaborating entity "tb_PROCESSOR" for the top level hierarchy
-Info (12128): Elaborating entity "PROCESSOR" for hierarchy "PROCESSOR:dut" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/tb_PROCESSOR.sv Line: 6
-Info (12128): Elaborating entity "instruction_memory" for hierarchy "PROCESSOR:dut|instruction_memory:instruction_memory_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/PROCESSOR.sv Line: 5
-Warning (10030): Net "memory.data_a" at instruction_memory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/instruction_memory.sv Line: 5
-Warning (10030): Net "memory.waddr_a" at instruction_memory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/instruction_memory.sv Line: 5
-Warning (10030): Net "memory.we_a" at instruction_memory.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/instruction_memory.sv Line: 5
-Info (12128): Elaborating entity "ARMV4" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/PROCESSOR.sv Line: 6
-Info (12128): Elaborating entity "control_unit" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|control_unit:control_unit_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ARMV4.sv Line: 8
-Info (12128): Elaborating entity "decoder" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|control_unit:control_unit_unit|decoder:decoder_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/control_unit.sv Line: 14
-Info (12128): Elaborating entity "conditional_logic" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/control_unit.sv Line: 15
-Info (12128): Elaborating entity "REG_EN" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_1" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/conditional_logic.sv Line: 10
-Info (12128): Elaborating entity "conditions" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|conditions:conditions_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/conditional_logic.sv Line: 13
-Info (12128): Elaborating entity "data_path" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ARMV4.sv Line: 9
-Info (12128): Elaborating entity "muxARM" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxPC" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/data_path.sv Line: 26
-Info (12128): Elaborating entity "PC_REG" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|PC_REG:PC_REG_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/data_path.sv Line: 27
-Info (12128): Elaborating entity "adderARM" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/data_path.sv Line: 29
-Info (12128): Elaborating entity "muxARM" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/data_path.sv Line: 33
-Info (12128): Elaborating entity "register_file" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/data_path.sv Line: 44
-Info (12128): Elaborating entity "extend" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|extend:extend_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/data_path.sv Line: 51
-Info (12128): Elaborating entity "ALU_N_bits" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/data_path.sv Line: 59
-Info (12128): Elaborating entity "mux_Sumador" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 25
-Info (12128): Elaborating entity "sumador" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 26
-Info (12128): Elaborating entity "and_A" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|and_A:and_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 27
-Info (12128): Elaborating entity "or_A" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|or_A:or_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 28
-Info (12128): Elaborating entity "xor_A" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|xor_A:xor_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 29
-Info (12128): Elaborating entity "not_A" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|not_A:not_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 30
-Info (12128): Elaborating entity "left_shift_arithmetic" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_arithmetic:lsa" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 31
-Info (12128): Elaborating entity "right_shift_arithmetic" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_arithmetic:rsa" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 32
-Info (12128): Elaborating entity "left_shift_logic" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_logic:lsl" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 33
-Info (12128): Elaborating entity "right_shift_logic" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_logic:rsl" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 34
-Info (12128): Elaborating entity "mux_ALU" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 37
-Info (12128): Elaborating entity "flags" for hierarchy "PROCESSOR:dut|ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|flags:flags_F" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/ALU/ALU_N_bits.sv Line: 40
-Info (12128): Elaborating entity "data_memory" for hierarchy "PROCESSOR:dut|data_memory:data_memory_unit" File: C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/PROCESSOR.sv Line: 7
-Info (144001): Generated suppressed messages file C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/output_files/ARMV4.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4799 megabytes
-    Info: Processing ended: Sun Nov 11 20:32:49 2018
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:49
+    Info (12023): Found entity 1: PROCESSOR File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv Line: 1
+Info (12127): Elaborating entity "PROCESSOR" for the top level hierarchy
+Info (12128): Elaborating entity "instruction_memory" for hierarchy "instruction_memory:instruction_memory_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv Line: 5
+Warning (10030): Net "memory.data_a" at instruction_memory.sv(5) has no driver or initial value, using a default initial value '0' File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/instruction_memory.sv Line: 5
+Warning (10030): Net "memory.waddr_a" at instruction_memory.sv(5) has no driver or initial value, using a default initial value '0' File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/instruction_memory.sv Line: 5
+Warning (10030): Net "memory.we_a" at instruction_memory.sv(5) has no driver or initial value, using a default initial value '0' File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/instruction_memory.sv Line: 5
+Info (12128): Elaborating entity "ARMV4" for hierarchy "ARMV4:ARMV4_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv Line: 6
+Info (12128): Elaborating entity "control_unit" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ARMV4.sv Line: 8
+Info (12128): Elaborating entity "decoder" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit|decoder:decoder_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/control_unit.sv Line: 14
+Info (12128): Elaborating entity "conditional_logic" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/control_unit.sv Line: 15
+Info (12128): Elaborating entity "REG_EN" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|REG_EN:reg_1" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditional_logic.sv Line: 10
+Info (12128): Elaborating entity "conditions" for hierarchy "ARMV4:ARMV4_unit|control_unit:control_unit_unit|conditional_logic:conditional_logic_unit|conditions:conditions_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditional_logic.sv Line: 13
+Info (12128): Elaborating entity "data_path" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ARMV4.sv Line: 9
+Info (12128): Elaborating entity "muxARM" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxPC" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv Line: 26
+Info (12128): Elaborating entity "PC_REG" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|PC_REG:PC_REG_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv Line: 27
+Info (12128): Elaborating entity "adderARM" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|adderARM:adderPCPLUS4" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv Line: 29
+Info (12128): Elaborating entity "muxARM" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|muxARM:muxRA1" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv Line: 33
+Info (12128): Elaborating entity "register_file" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv Line: 44
+Info (12128): Elaborating entity "extend" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|extend:extend_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv Line: 51
+Info (12128): Elaborating entity "ALU_N_bits" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv Line: 59
+Info (12128): Elaborating entity "mux_Sumador" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_Sumador:mux_S" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 25
+Info (12128): Elaborating entity "sumador" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|sumador:suma_F" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 26
+Info (12128): Elaborating entity "and_A" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|and_A:and_F" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 27
+Info (12128): Elaborating entity "or_A" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|or_A:or_F" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 28
+Info (12128): Elaborating entity "xor_A" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|xor_A:xor_F" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 29
+Info (12128): Elaborating entity "not_A" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|not_A:not_F" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 30
+Info (12128): Elaborating entity "left_shift_arithmetic" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_arithmetic:lsa" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 31
+Info (12128): Elaborating entity "right_shift_arithmetic" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_arithmetic:rsa" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 32
+Info (12128): Elaborating entity "left_shift_logic" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|left_shift_logic:lsl" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 33
+Info (12128): Elaborating entity "right_shift_logic" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|right_shift_logic:rsl" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 34
+Info (12128): Elaborating entity "mux_ALU" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|mux_ALU:mux_F" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 37
+Info (12128): Elaborating entity "flags" for hierarchy "ARMV4:ARMV4_unit|data_path:datapath_unit|ALU_N_bits:ALU|flags:flags_F" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv Line: 40
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:data_memory_unit" File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv Line: 7
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "ARMV4:ARMV4_unit|data_path:datapath_unit|register_file:register_file_unit|register_memory" is uninferred due to asynchronous read logic File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/register_file.sv Line: 8
+    Info (276007): RAM logic "data_memory:data_memory_unit|memory" is uninferred due to asynchronous read logic File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_memory.sv Line: 4
+Critical Warning (127005): Memory depth (16) in the design file differs from memory depth (15) in the Memory Initialization File "B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/db/ARMV4.ram0_register_file_87c776fc.hdl.mif" -- setting initial value for remaining addresses to 0
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 25 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/output_files/ARMV4.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 2230 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 65 output pins
+    Info (21061): Implemented 2163 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4896 megabytes
+    Info: Processing ended: Thu Apr 11 17:22:39 2019
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:46
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in C:/Users/Chris/Documents/TEC/Taller/Proyecto/Processor/ARMv4_Processor/ARMV4/output_files/ARMV4.map.smsg.
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/output_files/ARMV4.map.smsg.
 
 
