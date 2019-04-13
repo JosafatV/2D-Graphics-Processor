@@ -6,7 +6,7 @@ module PROCESSOR(input logic clk, reset,
 		
 		instruction_memory instruction_memory_unit(PC, Instruction); 
 		
-		ARMV4 ARMV4_unit(clk, reset,Instruction,ReadData,MemWrite,PC, DataAdr, WriteData);
+		ARM ARMV7_unit(clk, reset, Instruction, ReadData, MemWrite, PC, DataAdr, WriteData);
 		
 		data_memory data_memory_unit(clk, MemWrite, DataAdr, WriteData, ReadData); 
 		
