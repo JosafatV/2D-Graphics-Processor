@@ -31,6 +31,9 @@
 
 # software source files:
 ### tbd
+### rdb
+### hdb
+### cdb
 
 ######## Quartus II binary files
 
@@ -58,6 +61,3 @@
 !*.tcl
 
 # End of https://www.gitignore.io/api/alteraquartusii
-*.rdb
-*.hdb
-*.cdb
