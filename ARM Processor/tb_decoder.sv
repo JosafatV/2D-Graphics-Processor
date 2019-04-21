@@ -24,6 +24,7 @@ module tb_decoder();
 			clk <= 0; 
 			# 5;
 		end
+		
 	 always
 		begin
 			//ADD R0, R1, #42

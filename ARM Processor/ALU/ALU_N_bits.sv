@@ -18,12 +18,13 @@ module ALU_N_bits#(parameter N=32) (input logic [N-1:0] A, B,
 					//1000 left shift logico
 					//1001 right shift logico
 					//1010 division
+					//1011 sin 
 					initial begin
 						flags = 4'b0;
 					end
 					
 					logic cout;
-					logic [N-1:0] suma_R, and_R, or_R, not_R, xor_R, lsl_R, rsl_R, lsa_R, rsa_R, div_R, res_Mux;
+					logic [N-1:0] suma_R, and_R, or_R, not_R, xor_R, lsl_R, rsl_R, lsa_R, rsa_R, div_R, sin_R, res_Mux;
 					mux_Sumador #(N) 				 mux_S(B,~B,ALUControl,res_Mux); 				// suma y
 					sumador #(N) 					 suma_F(A,res_Mux,ALUControl[0],suma_R,cout);// resta
 					and_A #(N) 						 and_F(A,B,and_R); 				// and
@@ -35,9 +36,10 @@ module ALU_N_bits#(parameter N=32) (input logic [N-1:0] A, B,
 					left_shift_logic #(N) 		 lsl(A,lsl_R); 					// left shift logico
 					right_shift_logic #(N) 		 rsl(A,rsl_R); 					// right shift logico
 					div_A #(N) 						 div_F(A, B, div_R); 			// division
+					sin_A #(N) 						 sin_F(A, sin_R); 				// sinusoid aproximation
 					
 					//MUX de la alu
-					mux_ALU #(N) mux_F(suma_R ,suma_R ,and_R ,or_R ,xor_R ,not_R , lsa_R, rsa_R, lsl_R, rsl_R, div_R, ALUControl, RESULT);
+					mux_ALU #(N) mux_F(suma_R ,suma_R ,and_R ,or_R ,xor_R ,not_R , lsa_R, rsa_R, lsl_R, rsl_R, div_R, sin_R, ALUControl, RESULT);
 					
 					//Calcula las flags
 					flags #(N) flags_F(A,B,suma_R,RESULT,cout,ALUControl,flags);

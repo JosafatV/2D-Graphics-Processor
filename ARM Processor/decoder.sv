@@ -91,6 +91,7 @@ module decoder(input logic [1:0] Op,
 						dataProcesing = 1'bx;
 				end
 		end
+		
 	always_comb
 		//if we are in a data procesing instruction
 		if(dataProcesing)
