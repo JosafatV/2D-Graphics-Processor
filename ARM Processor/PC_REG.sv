@@ -1,4 +1,4 @@
-module PC_REG(input logic clk,reset,
+module PC_REG(input logic clk, reset,
 				  input logic [31:0] PC_in,
 				  output logic [31:0] PC_out);
 	always_ff@(posedge clk, posedge reset)

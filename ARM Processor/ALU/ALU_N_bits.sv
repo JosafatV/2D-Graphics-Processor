@@ -23,18 +23,18 @@ module ALU_N_bits#(parameter N=32) (input logic [N-1:0] A, B,
 					end
 					
 					logic cout;
-					logic [N-1:0] suma_R,and_R ,or_R ,not_R ,xor_R , lsl_R, rsl_R, lsa_R, rsa_R, res_Mux;
-					mux_Sumador #(N) mux_S(B,~B,ALUControl,res_Mux); 			// suma y
-					sumador #(N) suma_F(A,res_Mux,ALUControl[0],suma_R,cout);// resta
-					and_A #(N) and_F(A,B,and_R); 										// and
-					or_A #(N) or_F(A,B,or_R); 											// or
-					xor_A #(N) xor_F(A,B,xor_R); 										// xor
-					not_A #(N) not_F(A,not_R); 										// not
-					left_shift_arithmetic #(N) lsa(A,lsa_R); 						// left shift aritmetico
+					logic [N-1:0] suma_R, and_R, or_R, not_R, xor_R, lsl_R, rsl_R, lsa_R, rsa_R, div_R, res_Mux;
+					mux_Sumador #(N) 				 mux_S(B,~B,ALUControl,res_Mux); 				// suma y
+					sumador #(N) 					 suma_F(A,res_Mux,ALUControl[0],suma_R,cout);// resta
+					and_A #(N) 						 and_F(A,B,and_R); 				// and
+					or_A #(N) 						 or_F(A,B,or_R); 					// or
+					xor_A #(N) 						 xor_F(A,B,xor_R); 				// xor
+					not_A #(N) 						 not_F(A,not_R); 					// not
+					left_shift_arithmetic #(N)  lsa(A,lsa_R); 					// left shift aritmetico
 					right_shift_arithmetic #(N) rsa(A,rsa_R); 					// right shift aritmetico
-					left_shift_logic #(N) lsl(A,lsl_R); 							// left shift logico
-					right_shift_logic #(N) rsl(A,rsl_R); 							// right shift logico
-					div_A #(N) div_F(A, B, div_R); 									// division
+					left_shift_logic #(N) 		 lsl(A,lsl_R); 					// left shift logico
+					right_shift_logic #(N) 		 rsl(A,rsl_R); 					// right shift logico
+					div_A #(N) 						 div_F(A, B, div_R); 			// division
 					
 					//MUX de la alu
 					mux_ALU #(N) mux_F(suma_R ,suma_R ,and_R ,or_R ,xor_R ,not_R , lsa_R, rsa_R, lsl_R, rsl_R, div_R, ALUControl, RESULT);

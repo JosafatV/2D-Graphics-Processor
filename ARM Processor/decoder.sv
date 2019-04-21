@@ -2,10 +2,12 @@ module decoder(input logic [1:0] Op,
 					input logic [5:0] funct,
 					input logic [3:0] Rd,
 					output logic[1:0] FlagW,
-					output logic PCS,RegW,MemW,NoWrite,MemtoReg,ALUSrc,
-					output logic [1:0] immSrc,RegSrc,
+					output logic PCS, RegW, MemW, NoWrite, MemtoReg, ALUSrc,
+					output logic [1:0] immSrc, RegSrc,
 					output logic [3:0]ALUControl);
+					
 	logic branch,dataProcesing;
+	
 	always_comb
 		//first we check what type of operation code we have
 		begin
