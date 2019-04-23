@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Fri Apr 12 22:41:38 2019
+Analysis & Elaboration Status : Successful - Mon Apr 22 21:54:23 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ARMV4
-Top-level Entity Name : tb_ARM
+Top-level Entity Name : tb_PROCESSOR
 Family : Cyclone IV GX
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

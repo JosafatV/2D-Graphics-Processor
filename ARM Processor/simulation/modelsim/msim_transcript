@@ -12,280 +12,322 @@
 # 
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/xor_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:17 on Apr 12,2019
+# Start time: 21:54:45 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/xor_A.sv 
 # -- Compiling module xor_A
 # 
 # Top level modules:
 # 	xor_A
-# End time: 22:42:17 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:45 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/sumador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:17 on Apr 12,2019
+# Start time: 21:54:45 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/sumador.sv 
 # -- Compiling module sumador
 # 
 # Top level modules:
 # 	sumador
-# End time: 22:42:17 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:45 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/right_shift_logic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:17 on Apr 12,2019
+# Start time: 21:54:45 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/right_shift_logic.sv 
 # -- Compiling module right_shift_logic
 # 
 # Top level modules:
 # 	right_shift_logic
-# End time: 22:42:17 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:45 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/right_shift_arithmetic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:17 on Apr 12,2019
+# Start time: 21:54:46 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/right_shift_arithmetic.sv 
 # -- Compiling module right_shift_arithmetic
 # 
 # Top level modules:
 # 	right_shift_arithmetic
-# End time: 22:42:17 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:46 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/or_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:17 on Apr 12,2019
+# Start time: 21:54:46 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/or_A.sv 
 # -- Compiling module or_A
 # 
 # Top level modules:
 # 	or_A
-# End time: 22:42:17 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:46 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/not_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:17 on Apr 12,2019
+# Start time: 21:54:46 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/not_A.sv 
 # -- Compiling module not_A
 # 
 # Top level modules:
 # 	not_A
-# End time: 22:42:17 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:46 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_Sumador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:17 on Apr 12,2019
+# Start time: 21:54:46 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_Sumador.sv 
 # -- Compiling module mux_Sumador
 # 
 # Top level modules:
 # 	mux_Sumador
-# End time: 22:42:17 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:46 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:17 on Apr 12,2019
+# Start time: 21:54:46 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_ALU.sv 
 # -- Compiling module mux_ALU
 # 
 # Top level modules:
 # 	mux_ALU
-# End time: 22:42:18 on Apr 12,2019, Elapsed time: 0:00:01
+# End time: 21:54:46 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/left_shift_logic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:18 on Apr 12,2019
+# Start time: 21:54:46 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/left_shift_logic.sv 
 # -- Compiling module left_shift_logic
 # 
 # Top level modules:
 # 	left_shift_logic
-# End time: 22:42:18 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:46 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/left_shift_arithmetic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:18 on Apr 12,2019
+# Start time: 21:54:46 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/left_shift_arithmetic.sv 
 # -- Compiling module left_shift_arithmetic
 # 
 # Top level modules:
 # 	left_shift_arithmetic
-# End time: 22:42:18 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:46 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/flags.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:18 on Apr 12,2019
+# Start time: 21:54:46 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/flags.sv 
 # -- Compiling module flags
 # 
 # Top level modules:
 # 	flags
-# End time: 22:42:18 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:46 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/and_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:18 on Apr 12,2019
+# Start time: 21:54:46 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/and_A.sv 
 # -- Compiling module and_A
 # 
 # Top level modules:
 # 	and_A
-# End time: 22:42:18 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:46 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:18 on Apr 12,2019
+# Start time: 21:54:47 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv 
 # -- Compiling module ALU_N_bits
 # 
 # Top level modules:
 # 	ALU_N_bits
-# End time: 22:42:18 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:47 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/muxARM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:18 on Apr 12,2019
+# Start time: 21:54:47 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/muxARM.sv 
 # -- Compiling module muxARM
 # 
 # Top level modules:
 # 	muxARM
-# End time: 22:42:18 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:47 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/adderARM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:18 on Apr 12,2019
+# Start time: 21:54:47 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/adderARM.sv 
 # -- Compiling module adderARM
 # 
 # Top level modules:
 # 	adderARM
-# End time: 22:42:18 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:47 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PC_REG.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:18 on Apr 12,2019
+# Start time: 21:54:47 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PC_REG.sv 
 # -- Compiling module PC_REG
 # 
 # Top level modules:
 # 	PC_REG
-# End time: 22:42:18 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:47 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:18 on Apr 12,2019
+# Start time: 21:54:47 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/extend.sv 
 # -- Compiling module extend
 # 
 # Top level modules:
 # 	extend
-# End time: 22:42:19 on Apr 12,2019, Elapsed time: 0:00:01
+# End time: 21:54:47 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:19 on Apr 12,2019
+# Start time: 21:54:47 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv 
 # -- Compiling module data_path
 # 
 # Top level modules:
 # 	data_path
-# End time: 22:42:19 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:48 on Apr 22,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:19 on Apr 12,2019
+# Start time: 21:54:48 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/decoder.sv 
 # -- Compiling module decoder
 # 
 # Top level modules:
 # 	decoder
-# End time: 22:42:19 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:48 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditions.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:19 on Apr 12,2019
+# Start time: 21:54:48 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditions.sv 
 # -- Compiling module conditions
 # 
 # Top level modules:
 # 	conditions
-# End time: 22:42:19 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:48 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/REG_EN.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:19 on Apr 12,2019
+# Start time: 21:54:48 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/REG_EN.sv 
 # -- Compiling module REG_EN
 # 
 # Top level modules:
 # 	REG_EN
-# End time: 22:42:19 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:48 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditional_logic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:19 on Apr 12,2019
+# Start time: 21:54:48 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditional_logic.sv 
 # -- Compiling module conditional_logic
 # 
 # Top level modules:
 # 	conditional_logic
-# End time: 22:42:19 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:48 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/control_unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:19 on Apr 12,2019
+# Start time: 21:54:48 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/control_unit.sv 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 22:42:19 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:48 on Apr 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_PROCESSOR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:48 on Apr 22,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_PROCESSOR.sv 
+# -- Compiling module tb_PROCESSOR
+# 
+# Top level modules:
+# 	tb_PROCESSOR
+# End time: 21:54:48 on Apr 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:48 on Apr 22,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv 
+# -- Compiling module PROCESSOR
+# 
+# Top level modules:
+# 	PROCESSOR
+# End time: 21:54:48 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/div_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:19 on Apr 12,2019
+# Start time: 21:54:48 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/div_A.sv 
 # -- Compiling module div_A
 # 
 # Top level modules:
 # 	div_A
-# End time: 22:42:19 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:49 on Apr 22,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ARM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:19 on Apr 12,2019
+# Start time: 21:54:49 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ARM.sv 
 # -- Compiling module ARM
 # 
 # Top level modules:
 # 	ARM
-# End time: 22:42:19 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:49 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_ARM.sv}
+# vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/sin_A.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:19 on Apr 12,2019
-# vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_ARM.sv 
-# -- Compiling module tb_ARM
+# Start time: 21:54:49 on Apr 22,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/sin_A.sv 
+# -- Compiling module sin_A
 # 
 # Top level modules:
-# 	tb_ARM
-# End time: 22:42:20 on Apr 12,2019, Elapsed time: 0:00:01
+# 	sin_A
+# End time: 21:54:49 on Apr 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/instruction_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:49 on Apr 22,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/instruction_memory.sv 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 21:54:49 on Apr 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:49 on Apr 22,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_memory.sv 
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 21:54:49 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/register_file.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:42:20 on Apr 12,2019
+# Start time: 21:54:49 on Apr 22,2019
 # vlog -reportprogress 300 -sv -work work "+incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor" B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/register_file.sv 
 # -- Compiling module register_file
 # 
 # Top level modules:
 # 	register_file
-# End time: 22:42:20 on Apr 12,2019, Elapsed time: 0:00:00
+# End time: 21:54:49 on Apr 22,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim rtl_work.tb_ARM
-# vsim rtl_work.tb_ARM 
-# Start time: 22:43:06 on Apr 12,2019
+vsim rtl_work.tb_PROCESSOR
+# vsim rtl_work.tb_PROCESSOR 
+# Start time: 21:54:54 on Apr 22,2019
 # Loading sv_std.std
-# Loading rtl_work.tb_ARM
+# Loading rtl_work.tb_PROCESSOR
+# Loading rtl_work.PROCESSOR
+# Loading rtl_work.instruction_memory
 # Loading rtl_work.ARM
 # Loading rtl_work.control_unit
 # Loading rtl_work.decoder
@@ -310,87 +352,34 @@ vsim rtl_work.tb_ARM
 # Loading rtl_work.left_shift_logic
 # Loading rtl_work.right_shift_logic
 # Loading rtl_work.div_A
+# Loading rtl_work.sin_A
 # Loading rtl_work.mux_ALU
 # Loading rtl_work.flags
-# ** Warning: (vsim-3017) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_ARM.sv(8): [TFMPC] - Too few port connections. Expected 8, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ARM.sv
-# ** Warning: (vsim-3722) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_ARM.sv(8): [TFMPC] - Missing connection for port 'WriteData'.
-# ** Warning: (vsim-3015) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(37): [PCDPC] - Port size (32) does not match connection size (1) for port 'O'. The port definition is at: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/div_A.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit/ALU/div_F File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/div_A.sv
-# ** Warning: (vsim-3015) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(40): [PCDPC] - Port size (32) does not match connection size (1) for port 'DIV'. The port definition is at: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_ALU.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit/ALU/mux_F File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_ALU.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(22): Variable '/tb_ARM/dut/datapath_unit/ALU/flags', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(43).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit/ALU File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(21): Variable '/tb_ARM/dut/datapath_unit/PCPLUS8', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(31).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(20): Variable '/tb_ARM/dut/datapath_unit/PCPLUS4', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(29).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(19): Variable '/tb_ARM/dut/datapath_unit/PC_in', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(26).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(18): Variable '/tb_ARM/dut/datapath_unit/Result', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(47).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
-vsim rtl_work.tb_ARM
-# End time: 22:43:11 on Apr 12,2019, Elapsed time: 0:00:05
-# Errors: 0, Warnings: 9
-# vsim rtl_work.tb_ARM 
-# Start time: 22:43:11 on Apr 12,2019
-# Loading sv_std.std
-# Loading rtl_work.tb_ARM
-# Loading rtl_work.ARM
-# Loading rtl_work.control_unit
-# Loading rtl_work.decoder
-# Loading rtl_work.conditional_logic
-# Loading rtl_work.REG_EN
-# Loading rtl_work.conditions
-# Loading rtl_work.data_path
-# Loading rtl_work.muxARM
-# Loading rtl_work.PC_REG
-# Loading rtl_work.adderARM
-# Loading rtl_work.register_file
-# Loading rtl_work.extend
-# Loading rtl_work.ALU_N_bits
-# Loading rtl_work.mux_Sumador
-# Loading rtl_work.sumador
-# Loading rtl_work.and_A
-# Loading rtl_work.or_A
-# Loading rtl_work.xor_A
-# Loading rtl_work.not_A
-# Loading rtl_work.left_shift_arithmetic
-# Loading rtl_work.right_shift_arithmetic
-# Loading rtl_work.left_shift_logic
-# Loading rtl_work.right_shift_logic
-# Loading rtl_work.div_A
-# Loading rtl_work.mux_ALU
-# Loading rtl_work.flags
-# ** Warning: (vsim-3017) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_ARM.sv(8): [TFMPC] - Too few port connections. Expected 8, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ARM.sv
-# ** Warning: (vsim-3722) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_ARM.sv(8): [TFMPC] - Missing connection for port 'WriteData'.
-# ** Warning: (vsim-3015) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(37): [PCDPC] - Port size (32) does not match connection size (1) for port 'O'. The port definition is at: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/div_A.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit/ALU/div_F File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/div_A.sv
-# ** Warning: (vsim-3015) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(40): [PCDPC] - Port size (32) does not match connection size (1) for port 'DIV'. The port definition is at: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_ALU.sv(2).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit/ALU/mux_F File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/mux_ALU.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(22): Variable '/tb_ARM/dut/datapath_unit/ALU/flags', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(43).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit/ALU File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(21): Variable '/tb_ARM/dut/datapath_unit/PCPLUS8', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(31).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(20): Variable '/tb_ARM/dut/datapath_unit/PCPLUS4', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(29).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(19): Variable '/tb_ARM/dut/datapath_unit/PC_in', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(26).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
-# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(18): Variable '/tb_ARM/dut/datapath_unit/Result', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(47).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ARM/dut/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
-add wave -position end  sim:/tb_ARM/clk
-add wave -position end  sim:/tb_ARM/reset
-add wave -position end  sim:/tb_ARM/Instruction
-add wave -position end  sim:/tb_ARM/MemWrite
-add wave -position end  sim:/tb_ARM/ALUResult
-add wave -position end  sim:/tb_ARM/WriteData
-add wave -position end  sim:/tb_ARM/ReadData
+# Loading rtl_work.data_memory
+# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(23): Variable '/tb_PROCESSOR/dut/ARMV7_unit/datapath_unit/ALU/flags', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv(45).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_PROCESSOR/dut/ARMV7_unit/datapath_unit/ALU File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/ALU_N_bits.sv
+# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(21): Variable '/tb_PROCESSOR/dut/ARMV7_unit/datapath_unit/PCPLUS8', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(31).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_PROCESSOR/dut/ARMV7_unit/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
+# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(20): Variable '/tb_PROCESSOR/dut/ARMV7_unit/datapath_unit/PCPLUS4', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(29).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_PROCESSOR/dut/ARMV7_unit/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
+# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(19): Variable '/tb_PROCESSOR/dut/ARMV7_unit/datapath_unit/PC_in', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(26).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_PROCESSOR/dut/ARMV7_unit/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
+# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(18): Variable '/tb_PROCESSOR/dut/ARMV7_unit/datapath_unit/Result', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv(47).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_PROCESSOR/dut/ARMV7_unit/datapath_unit File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_path.sv
+# ** Warning: (vsim-3839) B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv(5): Variable '/tb_PROCESSOR/dut/PC', driven via a port connection, is multiply driven. See B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_PROCESSOR/dut File: B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv
+add wave -position end  sim:/tb_PROCESSOR/clk
+add wave -position end  sim:/tb_PROCESSOR/reset
+add wave -position end  sim:/tb_PROCESSOR/WriteData
+add wave -position end  sim:/tb_PROCESSOR/DataAdr
+add wave -position end  sim:/tb_PROCESSOR/MemWrite
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Chris  Hostname: DESKTOP-QNMHHR9  ProcessID: 4376
-#           Attempting to use alternate WLF file "./wlft380yvr".
+#           Attempting to use alternate WLF file "./wlftmhntte".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft380yvr
-run 50
-# End time: 22:48:06 on Apr 12,2019, Elapsed time: 0:04:55
-# Errors: 0, Warnings: 11
+#           Using alternate file: ./wlftmhntte
+run100
+# invalid command name "run100"
+run 100
+# End time: 22:15:49 on Apr 22,2019, Elapsed time: 0:20:55
+# Errors: 1, Warnings: 8

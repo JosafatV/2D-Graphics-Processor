@@ -13,15 +13,13 @@ module tb_PROCESSOR();
 			clk <= 0; 
 			# 5;
 		end
+		
 	initial
 		begin
 			reset <= 1;
 			#10
 			reset <= 0;
-		
 		end
 		
-
-
 
 endmodule

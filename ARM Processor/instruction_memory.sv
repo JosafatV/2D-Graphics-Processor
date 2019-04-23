@@ -4,7 +4,7 @@ module instruction_memory(input logic [31:0] A,
 	//memoria de las instrucciones se hara de 31 instucciones por el momento	
 	logic [31:0] memory [31:0];
 	initial 
-		$readmemh("B:\\(D)\\Documentos\\GitHub\\2D-Graphics-Processor\\ARM Processor\\instructions\\instrucciones1.mem",memory);
+		$readmemh("B:\\(D)\\Documentos\\GitHub\\2D-Graphics-Processor\\ARM Processor\\instructions\\instrucciones2.mem",memory);
 					 
 	//ya que la instruccion esta desfasada 8 bytes entonces eliminare los 
 	//primeros 2 bits para lograr estar en la memoria actual

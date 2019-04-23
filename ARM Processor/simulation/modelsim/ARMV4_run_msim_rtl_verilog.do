@@ -28,8 +28,12 @@ vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ 
 vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/REG_EN.sv}
 vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/conditional_logic.sv}
 vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/control_unit.sv}
+vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_PROCESSOR.sv}
+vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/PROCESSOR.sv}
 vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/div_A.sv}
 vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ARM.sv}
-vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/tb_ARM.sv}
+vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor/ALU {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/ALU/sin_A.sv}
+vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/instruction_memory.sv}
+vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/data_memory.sv}
 vlog -sv -work work +incdir+B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM\ Processor {B:/(D)/Documentos/GitHub/2D-Graphics-Processor/ARM Processor/register_file.sv}
 
