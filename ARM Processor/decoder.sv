@@ -96,14 +96,29 @@ module decoder(input logic [1:0] Op,
 		//if we are in a data procesing instruction
 		if(dataProcesing)
 			begin
-				case(funct[4:1])
+			case(funct[4:1])
+				4'b0000: ALUControl = 4'b0000; // ADD
+				4'b0001: ALUControl = 4'b0001; // SUB
+				4'b0010: ALUControl = 4'b0010; // AND
+				4'b0011: ALUControl = 4'b0011; // ORR
+				4'b0100: ALUControl = 4'b0100; // XOR
+				4'b0101: ALUControl = 4'b0101; // NOT
+				4'b0110: ALUControl = 4'b0110; // LSA
+				4'b0111: ALUControl = 4'b0111; // RSA
+				4'b1000: ALUControl = 4'b1000; // LSL
+				4'b1001: ALUControl = 4'b1001; // RSL
+				4'b1010: ALUControl = 4'b1010; // DIV
+				4'b1011: ALUControl = 4'b1011; // SIN
+				default: ALUControl = 2'bx;
+			endcase
+				/*case(funct[4:1])
 					4'b0000: ALUControl = 4'b0010;//AND
 					4'b1100: ALUControl = 4'b0011;//OR
 					4'b0100: ALUControl = 4'b0000;//ADD
 					4'b0010: ALUControl = 4'b0001;//SUB
 					4'b1010: ALUControl = 4'b0001;//CMP
 					default: ALUControl = 2'bx;
-				endcase
+				endcase*/
 				//if we are doing a CMP NoWrite is 1 else NoWrite is 0
 				NoWrite = (funct[4:1]==4'b1010) ? 1'b1 : 1'b0;
 				//If our S bit or condition enable is on 
